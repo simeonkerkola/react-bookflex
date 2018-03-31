@@ -1,6 +1,6 @@
 # 🏨 Bookflex
 
-Landing Page for a "All-in-one" Booking App.
+Booking Page for a "All-in-one" Booking App.
 
 **Live Demo: https://bookflex.herokuapp.com/**
 

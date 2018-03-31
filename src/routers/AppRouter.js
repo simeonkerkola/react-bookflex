@@ -1,7 +1,7 @@
 import React from 'react';
 import { Router, Route, Switch, Link, NavLink } from 'react-router-dom';
 import createHistory from 'history/createBrowserHistory';
-import LandingPage from '../components/LandingPage';
+import MainPage from '../components/MainPage';
 // import HelpPage from '../components/HelpPage';
 import NotFoundPage from '../components/NotFoundPage';
 import PrivateRoute from './PrivateRoute';
@@ -14,7 +14,7 @@ const AppRouter = () => (
   <Router history={history}>
     <div>
       <Switch>
-        <PublicRoute path="/" component={LandingPage} exact />
+        <PublicRoute path="/" component={MainPage} exact />
         {/* <Route path="/help" component={HelpPage} /> */}
         <Route component={NotFoundPage} />
       </Switch>
