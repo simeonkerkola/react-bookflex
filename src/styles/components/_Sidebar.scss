@@ -1,0 +1,78 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  height: 80rem; // JUST FOR TEST
+  justify-content: space-between;
+}
+
+// SIDE NAVIGATION
+.side-nav {
+  font-size: 1.4rem;
+  list-style: none;
+  margin-top: 3.5rem;
+}
+
+.side-nav__item {
+  align-items: stretch;
+  position: relative;
+
+  &:not(:last-child) {
+    margin-bottom: .5rem;
+  }
+
+  &::before {
+    background-color: $color-primary;
+    content: '';
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transform: scaleY(0); // Starts from the middle and expands both up and down
+
+    // Width delay .3s, duration .2s
+    transition: transform .2s, width .3s cubic-bezier(.82, 0, .14, 1) .2s,
+      background-color .1s;
+    width: 3px;
+  }
+
+  // Active class same state as hover
+  &:hover::before,
+  &--active::before {
+    transform: scaleY(1);
+    width: 100%;
+  }
+
+  // On click
+  &:active::before {
+    background-color: $color-primary-light;
+  }
+}
+
+.side-nav__link {
+  &:link,
+  &:visited {
+    align-items: center;
+    //  background: $color-grey-dark-3;
+    color: $color-grey-light-1;
+    display: flex;
+    padding: 1rem 2rem;
+    position: relative; // Have to be specified for the z-index to work
+    text-transform: uppercase;
+    z-index: 10; // On top of the pseudo element, check position
+  }
+}
+
+.side-nav__icon {
+  fill: currentColor;
+  height: 1.75rem;
+  margin-right: 2rem;
+  width: 1.75rem;
+}
+
+// LEGAL TEXT
+.legal {
+  color: $color-grey-light-4;
+  font-size: 1.2rem;
+  order: 2;
+  padding: 2.5rem;
+}

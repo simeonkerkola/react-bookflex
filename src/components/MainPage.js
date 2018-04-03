@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Header from './Header';
+import Sidebar from './Sidebar';
 
 class LandingPage extends Component {
   render() {
@@ -7,7 +8,7 @@ class LandingPage extends Component {
       <div className="container">
         <Header />
         <div className="content">
-          <nav className="sidebar">Navigation</nav>
+          <Sidebar />
           <main className="hotel-view">hotel view</main>
         </div>
       </div>
