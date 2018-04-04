@@ -1,7 +1,7 @@
 .header {
   align-items: center; // aling flex items vertically center
   background-color: white;
-  border-bottom: $color-grey-light-2;
+  border-bottom: 1px solid $color-grey-light-2;
   display: flex;
   font-size: 1.4rem;
   justify-content: space-between;
@@ -57,8 +57,8 @@
 }
 
 .search__icon {
-  height: 2rem;
-  width: 2rem;
+  height: $icon-size-m;
+  width: $icon-size-m;
 
   &:focus {
     outline: none;
@@ -98,9 +98,9 @@
 .user-nav__icon {
   align-items: center;
   fill: $color-grey-dark-2;
-  height: 2.25rem;
+  height: $icon-size-m;
   margin: .5rem;
-  width: 2.25rem;
+  width: $icon-size-m;
 }
 
 .user-nav__notification {

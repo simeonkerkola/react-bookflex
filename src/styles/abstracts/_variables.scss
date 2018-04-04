@@ -13,4 +13,12 @@ $color-grey-dark-1: #333;
 $color-grey-dark-2: #777;
 $color-grey-dark-3: #999;
 
-$shadow-dark: 0 2rem 6rem rgba(black, .3);
+$shadow-primary-dark: 0 2rem 6rem rgba(darken($color-primary, 35%), .3);
+$shadow-primary-dark-small: 0 .4rem 2rem rgba(darken($color-primary, 35%), .3);
+
+// Fonts and Icons
+$icon-size-s: 1.75rem;
+$icon-size-m: 2.25rem;
+$font-size-s: 1.2rem;
+$font-size-m: 1.6rem;
+$font-size-l: 2.5rem;

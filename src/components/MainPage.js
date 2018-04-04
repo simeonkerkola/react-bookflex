@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Header from './Header';
 import Sidebar from './Sidebar';
+import HotelView from './HotelView';
 
 class LandingPage extends Component {
   render() {
@@ -9,7 +10,9 @@ class LandingPage extends Component {
         <Header />
         <div className="content">
           <Sidebar />
-          <main className="hotel-view">hotel view</main>
+          <main>
+            <HotelView />
+          </main>
         </div>
       </div>
     );
