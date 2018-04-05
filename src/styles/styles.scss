@@ -11,7 +11,9 @@
 
 // Components
 @import './components/Header';
-@import './components/HotelView';
+@import './components/HotelView/HotelView';
+@import './components/HotelView/Overview';
+@import './components/HotelView/HotelDetail';
 @import './components/MainPage';
 @import './components/Sidebar';
 @import './components/buttons';

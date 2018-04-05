@@ -1,0 +1,14 @@
+.hotel-view {
+}
+
+.gallery {
+  display: flex;
+}
+
+.gallery__item {
+}
+
+.gallery__photo {
+  display: block; // Image as an inline element leaves a small white space at the bottom
+  width: 100%;
+}

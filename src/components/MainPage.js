@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Header from './Header';
 import Sidebar from './Sidebar';
-import HotelView from './HotelView';
+import HotelView from './HotelView/HotelView';
 
 class LandingPage extends Component {
   render() {
