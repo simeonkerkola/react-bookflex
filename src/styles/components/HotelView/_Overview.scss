@@ -5,10 +5,10 @@
 }
 
 .overview__heading {
-  font-size: $font-size-l;
+  font-size: $font-size-xl;
   font-weight: 400;
   letter-spacing: 1px;
-  padding: 1.5rem 3rem;
+  padding: 1.5rem $spacing-m 1.5rem $spacing-l;
   text-transform: uppercase;
 }
 
@@ -32,7 +32,7 @@
 }
 
 .overview__icon-location-pin {
-  margin-right: .5rem;
+  margin-right: 0.5rem;
 }
 
 .overview__rating {

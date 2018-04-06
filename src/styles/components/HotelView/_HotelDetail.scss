@@ -1,21 +1,15 @@
 .detail {
-  background-color: $color-grey-light-2;
+  background-color: white;
   display: flex;
-  padding: $spacing-l;
+  //padding: $spacing-l;
 }
 
 .description {
   background-color: white;
-  box-shadow: $shadow-primary-light;
-  flex: 0 0 70%;
+  flex: 0 0 60%;
   font-size: $font-size-m;
   margin-right: $spacing-l;
   padding: $spacing-l;
-}
-
-.user-reviews {
-  background-color: goldenrod;
-  flex: 1; // Occupy the remaining space;
 }
 
 .paragraph:not(:last-of-type) {
