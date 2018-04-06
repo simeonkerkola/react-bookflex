@@ -1,2 +1,83 @@
 .detail {
+  background-color: $color-grey-light-2;
+  display: flex;
+  padding: $spacing-l;
+}
+
+.description {
+  background-color: white;
+  box-shadow: $shadow-primary-light;
+  flex: 0 0 70%;
+  font-size: $font-size-m;
+  margin-right: $spacing-l;
+  padding: $spacing-l;
+}
+
+.user-reviews {
+  background-color: goldenrod;
+  flex: 1; // Occupy the remaining space;
+}
+
+.paragraph:not(:last-of-type) {
+  margin-bottom: $spacing-s;
+}
+
+.list {
+  border-bottom: $border-light;
+  display: flex;
+  flex-wrap: wrap; // Allow items to break onto own lines
+  list-style: none;
+  margin: $spacing-m 0;
+  padding: $spacing-m 0;
+}
+
+.list__item {
+  flex: 0 0 50%; // 2 items per row
+  margin-bottom: $spacing-xs;
+  padding-right: $spacing-s;
+
+  // Arrow list as a pseudo element
+  &::before {
+    content: '';
+    display: inline-block;
+    height: $icon-size-xs;
+    margin-right: $spacing-xs;
+    width: $icon-size-xs;
+
+    // For older browsers
+    // background-image: url(/img/chevron-thin-right.svg);
+    // background-size: cover;
+
+    // Newer browsers: mask, works with colors
+    background-color: $color-primary-light;
+    mask-image: url(/img/chevron-thin-right.svg);
+    mask-size: cover;
+  }
+}
+
+.recommend {
+  align-items: center;
+  color: $color-grey-dark-2;
+  display: flex;
+  font-size: $font-size-s;
+}
+
+.recommend__count {
+  margin-right: auto;
+}
+
+.recommend__friends {
+}
+
+.recommend__photo {
+  border: 3px solid white;
+  border-radius: 50%;
+  box-sizing: content-box; // Border added on top of the height and the width
+  height: 4rem;
+  width: 4rem;
+
+  // Overlapping photos
+  &:not(:last-child) {
+    margin-right: -1rem;
+  }
 }

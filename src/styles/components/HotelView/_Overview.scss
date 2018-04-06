@@ -1,6 +1,6 @@
 .overview {
   align-items: center;
-  background-color: $color-grey-light-3;
+  background-color: $color-grey-light-1;
   display: flex;
 }
 
@@ -26,6 +26,7 @@
 
 .overview__location {
   display: flex;
+  flex: 0 0 auto;
   font-size: $font-size-s;
   vertical-align: center;
 }
@@ -40,6 +41,7 @@
   background-color: $color-primary;
   color: white;
   display: flex;
+  flex: 0 0 auto;
   flex-direction: column;
   justify-content: center; // Vertically
   margin-left: 3rem;

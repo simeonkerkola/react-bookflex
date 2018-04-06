@@ -1,12 +1,16 @@
 .sidebar {
+  background-color: $color-grey-dark-1;
   display: flex;
+
+  // grow: 0, shrink: 0, basis 20%
+  flex: 0 0 22rem;
   flex-direction: column;
-  height: 80rem; // JUST FOR TEST
   justify-content: space-between;
 }
 
 // SIDE NAVIGATION
 .side-nav {
+  flex: 0 0;
   font-size: 1.4rem;
   list-style: none;
   margin-top: 3.5rem;
@@ -71,6 +75,7 @@
 
 // LEGAL TEXT
 .legal {
+  align-self: center;
   color: $color-grey-light-4;
   font-size: 1.2rem;
   order: 2;
