@@ -13,6 +13,12 @@
   padding-bottom: 2px;
   transition: all .2s;
 
+  // if a Link element instead of button
+  &:link,
+  &:visited {
+    padding: .75rem 1rem;
+  }
+
   &:hover {
     color: $color-grey-dark-1;
 
