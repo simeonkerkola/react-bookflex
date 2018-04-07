@@ -1,4 +1,5 @@
 import React from 'react';
+import HotelReviews from './HotelReviews';
 
 const HotelDetail = () => (
   <div className="detail">
@@ -33,7 +34,7 @@ const HotelDetail = () => (
         </div>
       </div>
     </div>
-    <div className="user-reviews">reviews</div>
+    <HotelReviews />
   </div>
 );
 

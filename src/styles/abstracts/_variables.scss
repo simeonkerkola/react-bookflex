@@ -21,7 +21,8 @@ $shadow-primary-dark-small: 0 0.4rem 2rem rgba(darken($color-primary, 35%), 0.3)
 $icon-size-xs: 1rem;
 $icon-size-s: 1.75rem;
 $icon-size-m: 2.25rem;
-$font-size-s: 1.3rem;
+$font-size-xs: 1.3rem;
+$font-size-s: 1.4rem;
 $font-size-m: 1.6rem;
 $font-size-l: 2.5rem;
 $font-size-xl: 3.5rem;
@@ -33,3 +34,8 @@ $spacing-m: 3rem;
 $spacing-l: 4.5rem;
 
 $border-light: 1px solid $color-grey-light-2;
+
+// z-indexes
+$z-index-low: 10;
+$z-index-med: 20;
+$z-index-high: 30;

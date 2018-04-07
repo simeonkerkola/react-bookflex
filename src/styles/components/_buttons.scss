@@ -15,12 +15,21 @@
 
   &:hover {
     color: $color-grey-dark-1;
+
+    .btn-inline__arrow {
+      margin-left: 8px;
+    }
   }
 
   &:focus {
     animation: pulsate 1s infinite;
     outline: none;
   }
+}
+
+.btn-inline__arrow {
+  margin-left: 3px;
+  transition: margin-left .2s;
 }
 
 @keyframes pulsate {

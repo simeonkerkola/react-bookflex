@@ -2,7 +2,7 @@ import React from 'react';
 
 const OverView = () => (
   <div className="overview">
-    <h1 className="overview__heading">Holiday Cambodia</h1>
+    <h1 className="overview__heading">Holiday Inn Cambodia</h1>
 
     <div className="overview__stars">
       <svg className="overview__icon-star">

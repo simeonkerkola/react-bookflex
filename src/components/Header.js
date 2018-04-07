@@ -1,8 +1,11 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Header = () => (
   <header className="header">
-    <img src="/img/logo.png" alt="bookflex logo" className="logo" />
+    <Link to="/" className="logo__link">
+      <img src="/img/logo.png" alt="bookflex logo" className="logo" />
+    </Link>
     <form action="#0" className="search">
       <input type="text" className="search__input" placeholder="Search Hotels" />
       <button className="search__button">

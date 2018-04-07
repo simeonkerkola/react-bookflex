@@ -1,4 +1,67 @@
-.user-reviews {
-  background-color: $color-grey-light-1;
+.hotel-reviews {
+  align-items: center;
+  background-color: white;
+  display: flex;
   flex: 1; // Occupy the remaining space;
+  flex-direction: column;
+  font-size: $font-size-s;
+  padding: $spacing-l;
+}
+
+.review {
+  background-color: $color-grey-light-2;
+  box-shadow: $shadow-primary-light;
+  margin-bottom: $spacing-m;
+  padding: $spacing-l;
+  position: relative;
+
+  &::before {
+    color: $color-grey-light-1;
+    content: '\201C'; // “ left double quotation mark
+    font-family: sans-serif;
+    font-size: 20rem;
+    left: -1rem;
+    line-height: 1; // To reduce the size and position it correctly
+    overflow: hidden;
+    position: absolute;
+    top: -2rem;
+  }
+}
+
+.review__text {
+  margin-bottom: $spacing-s;
+  position: relative; // For the z-index to work
+  z-index: $z-index-high;
+}
+
+.review__user {
+  align-items: center;
+  display: flex;
+}
+
+.review__photo {
+  border-radius: 50px;
+  height: 4.5rem;
+  width: 4.5rem;
+  margin-right: $spacing-s;
+}
+
+.review__user-box {
+}
+
+.review__user-name {
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: .4rem;
+}
+
+.review__user-date {
+  color: $color-grey-dark-2;
+  font-size: $font-size-xs;
+}
+
+.review__rating {
+  color: $color-primary;
+  font-size: $font-size-l;
+  margin-left: auto;
 }

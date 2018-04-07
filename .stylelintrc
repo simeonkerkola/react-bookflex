@@ -12,7 +12,7 @@
       "custom-properties",
       "declarations"
     ],
-    "order/properties-alphabetical-order": true,
+    "order/properties-alphabetical-order": null,
     "number-leading-zero": "never",
   }
 }
