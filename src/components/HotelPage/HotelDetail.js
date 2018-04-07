@@ -25,7 +25,7 @@ const HotelDetail = () => (
         <li className="list__item">We speak all languages</li>
       </ul>
       <div className="recommend">
-        <p className="recommend__count">Lucy and 3 frieds recommend this hotel.</p>
+        <p className="recommend__count">Lucy and 3 friends recommend this hotel.</p>
         <div className="recommend__friends">
           <img src="/img/user-3.jpg" alt="Friend 1" className="recommend__photo" />
           <img src="/img/user-4.jpg" alt="Friend 2" className="recommend__photo" />
