@@ -6,6 +6,7 @@ import Sidebar from './Sidebar';
 import Gallery from './HotelPage/Gallery';
 import Overview from './HotelPage/Overview';
 import HotelDetail from './HotelPage/HotelDetail';
+import CallToAction from './HotelPage/CallToAction';
 
 class LandingPage extends Component {
   render() {
@@ -18,6 +19,7 @@ class LandingPage extends Component {
             <Gallery />
             <Overview />
             <HotelDetail />
+            <CallToAction />
           </main>
         </div>
       </div>

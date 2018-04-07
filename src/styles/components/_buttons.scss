@@ -1,15 +1,19 @@
 .btn {
-}
-
-.btn-inline {
-  background-color: transparent;
   border: none;
-  border-bottom: 1px solid currentColor;
-  color: $color-primary;
   cursor: pointer;
   display: inline-block;
   font-family: inherit;
   font-size: inherit;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.btn-inline {
+  background-color: transparent;
+  border-bottom: 1px solid currentColor;
+  color: $color-primary;
   padding-bottom: 2px;
   transition: all .2s;
 
@@ -29,7 +33,6 @@
 
   &:focus {
     animation: pulsate 1s infinite;
-    outline: none;
   }
 }
 
@@ -53,5 +56,61 @@
   100% {
     box-shadow: none;
     transform: scale(1);
+  }
+}
+
+.btn-roller {
+  background-image: linear-gradient(
+    to right bottom,
+    $color-primary-light,
+    $color-primary
+  );
+  border-radius: 100px;
+  color: white;
+  font-weight: 300;
+  overflow: hidden;
+  position: relative;
+  text-transform: uppercase;
+
+  // Select all of the child elements (both visible and invisible)
+  & > * {
+    display: inline-block;
+    height: 100%;
+    transition: all .2s;
+    width: 100%;
+  }
+
+  &__visible {
+    padding: 2rem 7.5rem;
+  }
+
+  &__invisible {
+    left: 0;
+    padding: 2rem 0;
+    position: absolute;
+    top: -100%; // Hiding over there
+  }
+
+  // On Hover
+
+  &:hover {
+    background-image: linear-gradient(
+      to left top,
+      $color-primary-light,
+      $color-primary
+    );
+  }
+
+  &:hover &__visible {
+    // transform instead of top positioning, cause it's position is not absolute
+    transform: translateY(100%);
+  }
+
+  &:hover &__invisible {
+    top: 0;
+  }
+
+  &:focus {
+    animation: pulsate 1s infinite;
   }
 }
