@@ -12,7 +12,8 @@
   background-color: $color-grey-light-2;
   box-shadow: $shadow-primary-medium;
   margin-bottom: $spacing-m;
-  padding: $spacing-l;
+  overflow: hidden;
+  padding: $spacing-m;
   position: relative;
 
   &::before {
@@ -22,9 +23,8 @@
     font-size: 20rem;
     left: -1rem;
     line-height: 1; // To reduce the size and position it correctly
-    overflow: hidden;
     position: absolute;
-    top: -2rem;
+    top: -2.75rem;
   }
 }
 
