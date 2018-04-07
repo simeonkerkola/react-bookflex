@@ -13,9 +13,11 @@ $color-grey-dark-2: #777;
 $color-grey-dark-3: #999;
 
 // Shadows
-$shadow-primary-dark: 0 2rem 6rem rgba(darken($color-primary, 35%), 0.3);
-$shadow-primary-light: 0 2rem 6rem rgba(darken($color-primary, 35%), 0.06);
-$shadow-primary-dark-small: 0 0.4rem 2rem rgba(darken($color-primary, 35%), 0.3);
+$shadow-primary-dark: 0 2rem 6rem rgba(darken($color-primary, 35%), .3);
+$shadow-primary-medium: 0 2rem 6rem rgba(darken($color-primary, 35%), .1);
+
+$shadow-primary-light: 0 2rem 6rem rgba(darken($color-primary, 35%), .06);
+$shadow-primary-dark-small: 0 .4rem 2rem rgba(darken($color-primary, 35%), .3);
 
 // Fonts and Icons
 $icon-size-xs: 1rem;

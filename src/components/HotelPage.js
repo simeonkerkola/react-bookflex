@@ -1,7 +1,11 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+
 import Header from './Header';
 import Sidebar from './Sidebar';
-import HotelView from './HotelView/HotelView';
+import Gallery from './HotelPage/Gallery';
+import Overview from './HotelPage/Overview';
+import HotelDetail from './HotelPage/HotelDetail';
 
 class LandingPage extends Component {
   render() {
@@ -10,8 +14,10 @@ class LandingPage extends Component {
         <Header />
         <div className="content">
           <Sidebar />
-          <main>
-            <HotelView />
+          <main className="hotel-page">
+            <Gallery />
+            <Overview />
+            <HotelDetail />
           </main>
         </div>
       </div>

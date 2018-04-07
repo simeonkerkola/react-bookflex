@@ -11,11 +11,10 @@
 
 // Components
 @import './components/Header';
-@import './components/HotelView/HotelView';
-@import './components/HotelView/Overview';
-@import './components/HotelView/HotelDetail';
-@import './components/HotelView/HotelReviews';
-@import './components/MainPage';
+@import './components/HotelPage';
+@import './components/HotelPage/Overview';
+@import './components/HotelPage/HotelDetail';
+@import './components/HotelPage/HotelReviews';
 @import './components/Sidebar';
 @import './components/buttons';
 @import './components/loader';
