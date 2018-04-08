@@ -6,6 +6,10 @@
   flex: 0 0 22rem;
   flex-direction: column;
   justify-content: space-between;
+
+  @media only screen and (max-width: $bp-tablet-land) {
+    flex: 0 0 auto;
+  }
 }
 
 // SIDE NAVIGATION
@@ -14,6 +18,11 @@
   font-size: 1.4rem;
   list-style: none;
   margin-top: 3.5rem;
+
+  @media only screen and (max-width: $bp-tablet-land) {
+    display: flex;
+    margin: 0;
+  }
 }
 
 .side-nav__item {
@@ -22,6 +31,14 @@
 
   &:not(:last-child) {
     margin-bottom: .5rem;
+
+    @media only screen and (max-width: $bp-tablet-land) {
+      margin: 0;
+    }
+  }
+
+  @media only screen and (max-width: $bp-tablet-land) {
+    flex: 1; // Occupy all available space
   }
 
   &::before {
@@ -63,6 +80,11 @@
     position: relative; // Have to be specified for the z-index to work
     text-transform: uppercase;
     z-index: 10; // On top of the pseudo element, check position
+
+    @media only screen and (max-width: $bp-tablet-land) {
+      justify-content: center;
+      padding: 2rem;
+    }
   }
 }
 
@@ -80,4 +102,8 @@
   font-size: 1.2rem;
   order: 2;
   padding: 2.5rem;
+
+  @media only screen and (max-width: $bp-tablet-land) {
+    display: none;
+  }
 }

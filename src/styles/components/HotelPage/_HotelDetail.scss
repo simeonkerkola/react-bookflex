@@ -1,7 +1,11 @@
 .detail {
   background-color: white;
   display: flex;
-  //padding: $spacing-l;
+  padding: $spacing-l;
+
+  @media only screen and (max-width: $bp-tablet-land) {
+    padding: $spacing-m;
+  }
 }
 
 .description {
@@ -9,7 +13,7 @@
   flex: 0 0 60%;
   font-size: $font-size-m;
   margin-right: $spacing-l;
-  padding: $spacing-l;
+  padding: 0;
 }
 
 .paragraph:not(:last-of-type) {
@@ -61,6 +65,7 @@
 }
 
 .recommend__friends {
+  display: flex;
 }
 
 .recommend__photo {

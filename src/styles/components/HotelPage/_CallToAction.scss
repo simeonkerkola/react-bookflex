@@ -1,6 +1,10 @@
 .cta {
   padding: $spacing-m 0 $spacing-l 0;
   text-align: center;
+
+  @media only screen and (max-width: $bp-tablet-land) {
+    padding: $spacing-s 0 $spacing-m 0;
+  }
 }
 
 .cta__book-now {
