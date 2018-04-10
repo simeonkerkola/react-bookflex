@@ -1,4 +1,4 @@
-# 🏨 Bookflex
+# 🌍 Bookflex
 
 Booking Page for a "All-in-one" Booking App.
 

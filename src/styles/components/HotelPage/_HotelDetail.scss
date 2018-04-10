@@ -7,6 +7,10 @@
     padding: $spacing-m;
     flex-direction: column;
   }
+
+  @media only screen and (max-width: $bp-mobile) {
+    padding: $spacing-s;
+  }
 }
 
 .description {
@@ -15,6 +19,10 @@
   font-size: $font-size-m;
   margin-right: $spacing-l;
   padding: 0;
+
+  @media only screen and (max-width: $bp-tablet-land) {
+    margin: 0;
+  }
 }
 
 .paragraph:not(:last-of-type) {
@@ -28,12 +36,22 @@
   list-style: none;
   margin: $spacing-m 0;
   padding: $spacing-m 0;
+
+  @media only screen and (max-width: $bp-mobile) {
+    padding: 0;
+  }
 }
 
 .list__item {
   flex: 0 0 50%; // 2 items per row
   margin-bottom: $spacing-xs;
   padding-right: $spacing-s;
+
+  @media only screen and (max-width: $bp-mobile) {
+    flex-basis: 100%;
+    margin-bottom: $spacing-s;
+    padding-right: 0;
+  }
 
   // Arrow list as a pseudo element
   &::before {
@@ -59,9 +77,14 @@
   color: $color-grey-dark-2;
   display: flex;
   font-size: $font-size-s;
+
+  @media only screen and (max-width: $bp-mobile) {
+    flex-wrap: wrap;
+  }
 }
 
 .recommend__count {
+  margin: $spacing-xs 0;
   margin-right: auto;
 }
 

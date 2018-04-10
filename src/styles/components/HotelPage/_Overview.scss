@@ -2,6 +2,12 @@
   align-items: center;
   background-color: $color-grey-light-1;
   display: flex;
+
+  @media only screen and (max-width: $bp-tablet-port) {
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 }
 
 .overview__heading {
@@ -20,11 +26,19 @@
   @media only screen and (max-width: $bp-tablet-port) {
     font-size: 2rem;
   }
+
+  @media only screen and (max-width: $bp-mobile) {
+    padding: $spacing-s;
+  }
 }
 
 .overview__stars {
   display: flex;
   margin-right: auto; // Push everything else to the right
+
+  @media only screen and (max-width: $bp-mobile) {
+    margin: 0;
+  }
 }
 
 .overview__icon-star,
@@ -43,6 +57,7 @@
   display: flex;
   flex: 0 0 auto;
   font-size: $font-size-s;
+  margin: $spacing-s;
   vertical-align: center;
 }
 
@@ -60,7 +75,12 @@
   flex-direction: column;
   justify-content: center; // Vertically
   margin-left: 3rem;
-  padding: 0 1rem;
+  padding: $spacing-xs;
+
+  @media only screen and (max-width: $bp-tablet-port) {
+    margin: $spacing-xs 0;
+    flex-basis: 100%;
+  }
 }
 
 .overview__rating-average {

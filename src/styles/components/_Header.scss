@@ -4,17 +4,20 @@
   border-bottom: 1px solid $color-grey-light-2;
   display: flex;
   font-size: 1.4rem;
+  height: 6rem;
   justify-content: space-between;
+
+  @media only screen and (max-width: $bp-mobile) {
+    align-content: space-around; // Space between the flex rows
+    flex-wrap: wrap;
+    height: 11rem; // Height looks better than padding here
+  }
 }
 
 // LOGO
 .logo {
   height: 3.25rem;
-  margin: 1.5rem 2rem;
-
-  @media only screen and (max-width: $bp-tablet-port) {
-    margin: 1rem 2rem;
-  }
+  margin: 0 2rem;
 }
 
 .logo__link {
@@ -31,6 +34,12 @@
   display: flex;
   flex: 0 0 40%; // Grow, Shrink, Basis
   justify-content: center; // Bar on focus now grows from both ends
+
+  @media only screen and (max-width: $bp-mobile) {
+    background-color: $color-grey-light-2;
+    flex-basis: 100%;
+    order: 1;
+  }
 }
 
 .search__input {
@@ -45,10 +54,23 @@
   transition: all .2s;
   width: 90%;
 
+  @media only screen and (max-width: $bp-mobile) {
+    border-radius: 0;
+    margin: 0;
+    width: 90%;
+
+    & ~ .search__button {
+      padding-right: 2rem;
+    }
+  }
+
   &:focus {
     background-color: $color-grey-light-3;
     outline: none;
     width: 100%;
+
+    @media only screen and (max-width: $bp-mobile) {
+    }
   }
 
   &:focus + .search__button {
