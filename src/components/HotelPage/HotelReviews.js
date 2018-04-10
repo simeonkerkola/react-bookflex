@@ -34,10 +34,11 @@ const HotelReviews = () => (
         <div className="review__rating">9</div>
       </figcaption>
     </figure>
-
-    <Link to="#0" className="btn btn-inline">
-      Show all <span className="btn-inline__arrow">&rarr;</span>
-    </Link>
+    <div className="reviews-link__view-all">
+      <Link to="#0" className="btn btn-inline">
+        Show all <span className="btn-inline__arrow">&rarr;</span>
+      </Link>
+    </div>
   </div>
 );
 

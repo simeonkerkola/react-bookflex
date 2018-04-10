@@ -5,6 +5,7 @@
 
   @media only screen and (max-width: $bp-tablet-land) {
     padding: $spacing-m;
+    flex-direction: column;
   }
 }
 
@@ -38,18 +39,18 @@
   &::before {
     content: '';
     display: inline-block;
-    height: $icon-size-xs;
+    height: 1rem;
     margin-right: $spacing-xs;
-    width: $icon-size-xs;
-
-    // For older browsers
-    // background-image: url(/img/chevron-thin-right.svg);
-    // background-size: cover;
+    width: 1rem;
 
     // Newer browsers: mask, works with colors
     background-color: $color-primary-light;
     mask-image: url(/img/chevron-thin-right.svg);
     mask-size: cover;
+
+    // For older browsers
+    background-image: url(/img/chevron-thin-right.svg);
+    background-size: cover;
   }
 }
 

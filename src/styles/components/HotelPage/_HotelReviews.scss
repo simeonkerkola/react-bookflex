@@ -6,6 +6,13 @@
   flex-direction: column;
   font-size: $font-size-s;
   padding: 0;
+
+  @media only screen and (max-width: $bp-tablet-land) {
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: $spacing-xl;
+  }
 }
 
 .review {
@@ -15,6 +22,23 @@
   overflow: hidden;
   padding: $spacing-m;
   position: relative;
+
+  @media only screen and (max-width: $bp-tablet-land) {
+    flex: 0 0 45%; // 2 items per row
+    margin-bottom: $spacing-l;
+
+    &:not(:last-of-type) {
+      margin-right: 5%;
+    }
+  }
+
+  @media only screen and (max-width: $bp-tablet-port) {
+    flex: 0 0 100%; // 1 item per row
+
+    &:not(:last-of-type) {
+      margin-right: 0;
+    }
+  }
 
   &::before {
     color: $color-grey-light-1;

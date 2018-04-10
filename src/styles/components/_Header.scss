@@ -11,9 +11,15 @@
 .logo {
   height: 3.25rem;
   margin: 1.5rem 2rem;
+
+  @media only screen and (max-width: $bp-tablet-port) {
+    margin: 1rem 2rem;
+  }
 }
+
 .logo__link {
-  transition: all 0.3s;
+  transition: all .3s;
+
   &:hover {
     transform: scale(1.1);
   }
@@ -35,8 +41,8 @@
   font-family: inherit;
   font-size: inherit;
   margin-right: -3.25rem;
-  padding: 0.7rem 2rem;
-  transition: all 0.2s;
+  padding: .7rem 2rem;
+  transition: all .2s;
   width: 90%;
 
   &:focus {
@@ -59,7 +65,7 @@
   background-color: transparent;
   border: none;
   fill: $color-grey-dark-3;
-  transition: all 0.2s;
+  transition: all .2s;
 }
 
 .search__icon {
@@ -88,9 +94,9 @@
   display: flex;
   flex: 0 0;
   height: 100%;
-  padding: 0.8rem 1.5rem;
+  padding: .8rem 1.5rem;
   position: relative;
-  transition: all 0.2s;
+  transition: all .2s;
 
   &:hover {
     background-color: $color-grey-light-2;
@@ -105,7 +111,7 @@
   align-items: center;
   fill: $color-grey-dark-2;
   height: $icon-size-m;
-  margin: 0.5rem;
+  margin: .5rem;
   width: $icon-size-m;
 }
 
@@ -115,10 +121,10 @@
   border-radius: 50%;
   color: white;
   display: flex;
-  font-size: 0.8rem;
+  font-size: .8rem;
   height: 1.75rem;
   justify-content: center; // Center text horizontally
-  padding: 0.25rem;
+  padding: .25rem;
   position: absolute;
   right: 1.3rem;
   top: 1rem;
@@ -131,7 +137,7 @@
 }
 
 .user-nav__user-photo {
-  border-radius: 50%;
+  border-radius: 100px;
   height: 3.25rem;
   margin-right: 1rem;
 }

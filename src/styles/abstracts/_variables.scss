@@ -20,7 +20,7 @@ $shadow-primary-light: 0 2rem 6rem rgba(darken($color-primary, 35%), .06);
 $shadow-primary-dark-small: 0 .4rem 2rem rgba(darken($color-primary, 35%), .3);
 
 // Fonts and Icons
-$icon-size-xs: 1rem;
+$icon-size-xs: 1.5rem;
 $icon-size-s: 1.75rem;
 $icon-size-m: 2.25rem;
 $font-size-xs: 1.3rem;
@@ -34,6 +34,7 @@ $spacing-xs: 1rem;
 $spacing-s: 2rem;
 $spacing-m: 3rem;
 $spacing-l: 4.5rem;
+$spacing-xl: 6rem;
 
 $border-light: 1px solid $color-grey-light-2;
 
@@ -45,3 +46,4 @@ $z-index-high: 30;
 // Breakpoints
 $bp-desktop: 1200px;
 $bp-tablet-land: 900px;
+$bp-tablet-port: 700px;
