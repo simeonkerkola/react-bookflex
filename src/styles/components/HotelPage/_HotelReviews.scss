@@ -7,7 +7,7 @@
   font-size: $font-size-m;
   padding: 0;
 
-  @media only screen and (max-width: $bp-tablet-land) {
+  @media only screen and (max-width: $bp-desktop) {
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
@@ -23,7 +23,7 @@
   padding: $spacing-m;
   position: relative;
 
-  @media only screen and (max-width: $bp-tablet-land) {
+  @media only screen and (max-width: $bp-desktop) {
     flex: 0 0 45%; // 2 items per row
     margin-bottom: $spacing-l;
 

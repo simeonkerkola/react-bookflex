@@ -3,7 +3,7 @@
   display: flex;
   padding: $spacing-l;
 
-  @media only screen and (max-width: $bp-tablet-land) {
+  @media only screen and (max-width: $bp-desktop) {
     padding: $spacing-m;
     flex-direction: column;
   }
