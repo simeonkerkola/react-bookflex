@@ -23,10 +23,6 @@
     padding: 1.5rem $spacing-m;
   }
 
-  @media only screen and (max-width: $bp-tablet-port) {
-    font-size: 2rem;
-  }
-
   @media only screen and (max-width: $bp-mobile) {
     padding: $spacing-s;
   }
@@ -90,10 +86,6 @@
 
   @media only screen and (max-width: $bp-tablet-land) {
     font-size: 2rem;
-  }
-
-  @media only screen and (max-width: $bp-tablet-port) {
-    font-size: $font-size-m;
   }
 }
 

@@ -61,14 +61,19 @@
     margin-right: $spacing-xs;
     width: 1rem;
 
-    // Newer browsers: mask, works with colors
-    background-color: $color-primary-light;
-    mask-image: url(/img/chevron-thin-right.svg);
-    mask-size: cover;
-
     // For older browsers
     background-image: url(/img/chevron-thin-right.svg);
     background-size: cover;
+
+    // Newer browsers: mask, works with colors
+    @supports (-webkit-mask-image: url()) or (mask-image: url()) {
+      background-color: $color-primary-light;
+
+      // Remove the background-image for older browsers
+      background-image: none;
+      mask-image: url(/img/chevron-thin-right.svg);
+      mask-size: cover;
+    }
   }
 }
 
@@ -85,7 +90,7 @@
 
 .recommend__count {
   margin: $spacing-xs 0;
-  margin-right: auto;
+  margin-right: $spacing-xs;
 }
 
 .recommend__friends {
