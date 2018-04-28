@@ -5,7 +5,7 @@ const Sidebar = () => (
   <nav className="sidebar">
     <Sticky
       // Disable for mobile
-      enabled={!(window.innerWidth <= 900)}
+      enabled={!!(window.innerWidth >= 900)}
     >
       <ul className="side-nav">
         <li className="side-nav__item side-nav__item--active">
@@ -44,7 +44,7 @@ const Sidebar = () => (
     </Sticky>
 
     <div className="legal" id="legal">
-        &copy; {new Date().getFullYear()} Bookflex
+      &copy; {new Date().getFullYear()} Bookflex
     </div>
   </nav>
 );
